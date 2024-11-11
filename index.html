@@ -1,37 +1,39 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yining Han @ zju</title>
     <style>
-        /* 图片容器：将图片和文字放置到右侧 */
-        .image-container {
-            text-align: right; /* 使内容靠右 */
+        .container {
+            display: flex; 
+            justify-content: space-between;
+            align-items: center;
         }
 
         .image-container img {
-            width: 300px; /* 设置图片宽度 */
-            margin-bottom: 10px; /* 图片和文字之间的间距 */
+            width: 300px; 
         }
 
-        .image-caption {
-            font-size: 18px; /* 设置文字大小 */
-            font-weight: bold; /* 设置文字加粗 */
-            text-align: right; /* 文字对齐到右边 */
+        .text {
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
     <h1>My name is Yining Han.</h1>
-    <p>I'm interested in CG and AI.</p>
-    <p>Contact me via 3230104250@zju.edu.cn or 3530785750@qq.com.</p>
 
-    <!-- 图片和文字容器 -->
-    <div class="image-container">
-        <img src="me.jpg" alt="Me and the British Royal Guards, 2024">
-        <div class="image-caption">Me and the British Royal Guards, 2024</div>
+    <div class="container">
+        <div class="text">
+            <p>I am a sophomore at Zhejiang University, majoring in Computer Science and Technology.</p>
+            <p>My research interests mainly include Computer Graphics and Artificial Intelligence.</p>p
+            <p>You can contact me via 3230104250@zju.edu.cn or 3530785750@qq.com.</p>
+        </div>
+        <div class="image-container">
+            <img src="me.jpg" alt="Me and the British Royal Guards, 2024">
+            <div class="image-caption">Me and the British Royal Guards, 2024</div>
+        </div>
     </div>
 </body>
 </html>
-
